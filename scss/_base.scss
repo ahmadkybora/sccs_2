@@ -1,0 +1,42 @@
+$color-dark: #262626;
+$color-black: #000;
+$color-primary: #d3ab55;
+$color-secondary: #bbb;
+$color-white: #fff;
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textStyles {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@mixin centering($topVal) {
+    position: absolute;
+    top: $topVal;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@font-face {
+    font-family: tahoma;
+    src: url();
+}
+
+%fullSpace {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $color-dark;
+}
